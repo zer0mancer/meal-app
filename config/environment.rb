@@ -5,6 +5,11 @@ configure :development do
   require "better_errors"
   require "binding_of_caller"
 
+  configure do
+    # setup a database connection
+    set(:database, { adapter: "sqlite3", database: "db/development.sqlite3" })
+  end
+
   # need this configure for better errors
   use(BetterErrors::Middleware)
   BetterErrors.application_root = __dir__

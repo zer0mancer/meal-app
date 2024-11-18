@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What's for dinner?</title>
+
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
+
+    html {
+      display: table;
+      margin: auto;
+    }
+
+    body {
+          padding-top: 40px;
+      padding-bottom: 40px;
+      background-color: red;
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    button {
+      background-color: green;
+       display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+
+  </style>
+</head>
+<body>
+  
+<h1>
+  Welcome to the Mystery Meal Generator!
+</h1>
+
+<div>
+  <p>When you're hungry and don't want to think about what to make for dinner, let us decide for you!</p>
+  <p>Click the Meal Generator and it'll give you a recipe with a list of ingredients and instructions. Bon appetit! </p>
+
+</div>
+
+<div>
+  <form action="/random_recipe">
+    <p><button> Give me a meal! </button></p>
+  </form>
+
+</div>
+
+</body>
+</html>
